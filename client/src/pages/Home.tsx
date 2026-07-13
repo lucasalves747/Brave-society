@@ -319,7 +319,7 @@ function ThesisSection() {
   return (
     <section
       id="about"
-      className="py-28 md:py-40"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container max-w-3xl mx-auto text-center">
@@ -375,7 +375,7 @@ function PillarsSection() {
   return (
     <section
       id="pillars"
-      className="py-28 md:py-40"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#07111F" }}
     >
       <div className="container">
@@ -427,7 +427,7 @@ function ProgrammingSection() {
   const { t } = useLanguage();
   return (
     <section
-      className="py-28 md:py-40 relative overflow-hidden"
+      className="py-16 md:py-24 relative overflow-hidden"
       style={{ backgroundColor: "#05070B" }}
     >
       {/* Background image with heavy overlay */}
@@ -489,7 +489,7 @@ function CodeSection() {
   const { t } = useLanguage();
   return (
     <section
-      className="py-28 md:py-40 relative overflow-hidden"
+      className="py-16 md:py-24 relative overflow-hidden"
       style={{ backgroundColor: "#07111F" }}
     >
       {/* Watermark seal */}
@@ -565,7 +565,7 @@ function FoundersSection() {
   return (
     <section
       id="founders"
-      className="py-28 md:py-40"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container">
@@ -668,7 +668,7 @@ function MembershipSection() {
   return (
     <section
       id="membership"
-      className="py-28 md:py-40"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#07111F" }}
     >
       <div className="container max-w-4xl mx-auto">
@@ -818,7 +818,7 @@ function ApplySection() {
   return (
     <section
       id="apply"
-      className="py-28 md:py-40"
+      className="py-16 md:py-24"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container max-w-2xl mx-auto">
