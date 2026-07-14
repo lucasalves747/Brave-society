@@ -29,9 +29,9 @@ const en = {
   },
   hero: {
     eyebrow: "Miami Private Business Society",
-    line1: "Business.",
-    line2: "Brotherhood.",
-    line3: "Legacy.",
+    line1: "Business",
+    line2: "Brotherhood",
+    line3: "Legacy",
     subtitle:
       "For leaders who have already won financially, but seek a circle where trust precedes opportunity.",
     applyBtn: "Apply for Membership",
@@ -199,9 +199,9 @@ const pt: Dict = {
   },
   hero: {
     eyebrow: "Sociedade Privada de Negócios de Miami",
-    line1: "Negócios.",
-    line2: "Irmandade.",
-    line3: "Legado.",
+    line1: "Negócios",
+    line2: "Irmandade",
+    line3: "Legado",
     subtitle:
       "Para líderes que já venceram financeiramente, mas buscam um círculo onde a confiança precede a oportunidade.",
     applyBtn: "Candidatar-se à Associação",
@@ -367,9 +367,9 @@ const es: Dict = {
   },
   hero: {
     eyebrow: "Sociedad Privada de Negocios de Miami",
-    line1: "Negocios.",
-    line2: "Hermandad.",
-    line3: "Legado.",
+    line1: "Negocios",
+    line2: "Hermandad",
+    line3: "Legado",
     subtitle:
       "Para líderes que ya han triunfado financieramente, pero buscan un círculo donde la confianza precede a la oportunidad.",
     applyBtn: "Postular a la Membresía",

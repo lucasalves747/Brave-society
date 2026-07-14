@@ -237,24 +237,13 @@ function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Circular seal */}
+        {/* Logo */}
         <div className="flex justify-center mb-10">
-          <div
-            className="w-20 h-20 rounded-full border-2 flex items-center justify-center"
-            style={{ borderColor: "#C89B45" }}
-          >
-            <div
-              className="w-14 h-14 rounded-full border flex items-center justify-center"
-              style={{ borderColor: "rgba(200,155,69,0.4)" }}
-            >
-              <span
-                className="font-display font-bold text-xl"
-                style={{ color: "#C89B45" }}
-              >
-                BS
-              </span>
-            </div>
-          </div>
+          <img
+            src={ASSETS.logo}
+            alt="Brave Society"
+            className="w-24 h-24 object-contain"
+          />
         </div>
 
         <p className="eyebrow mb-6" style={{ color: "#C89B45" }}>
@@ -335,22 +324,6 @@ function ThesisSection() {
           <em style={{ color: "#C89B45" }}>{t.thesis.quoteEm}</em>
           {t.thesis.quotePost}
         </blockquote>
-
-        <div className="reveal reveal-delay-2 mt-16 grid grid-cols-3 gap-8 text-center">
-          {t.thesis.stats.map(({ num, label }) => (
-            <div key={label}>
-              <p
-                className="font-display font-bold"
-                style={{ color: "#C89B45", fontSize: "clamp(32px, 5vw, 52px)" }}
-              >
-                {num}
-              </p>
-              <p className="eyebrow mt-2" style={{ color: "#D8C7A1" }}>
-                {label}
-              </p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
@@ -755,8 +728,31 @@ function ApplySection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate submission
-    await new Promise((r) => setTimeout(r, 1500));
+
+    const payload = {
+      nome: form.name,
+      email: form.email,
+      telefone: form.phone,
+      regiao: "",
+      profissao: form.company,
+      redes_sociais: form.social ? [form.social] : [],
+      comentario: form.referral ? `Indicado por: ${form.referral}` : "",
+      tags: ["lead", "site"],
+    };
+
+    try {
+      await fetch(
+        "https://contact-blossom-39.lovable.app/api/public/contatos/ck_8dc7a9ed_8dc7a9edb2a6a6dbcb7b7141e8f41ae82ffa0b55333dca75b156023b64d17fab",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+    } catch (err) {
+      console.error("Erro ao enviar formulário:", err);
+    }
+
     setLoading(false);
     setSubmitted(true);
   };
