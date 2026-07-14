@@ -7,7 +7,7 @@ const ASSETS = {
   heroVideo: "/assets/ref_miami_skyline.jpg",
   yachtNight: "/assets/ref_yacht_miami_night.jpg",
   dinnerCandle: "/assets/ref_dinner_candle.jpg",
-  winecellar: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a562d94180dde3f860515b2.png",
+  winecellar: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a567397f1f33d94433358d2.png",
   ironman: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a542870180dde3f86913597.jpeg",
   premiumExperiences: "/assets/premium_experiences.png",
   businessHub: "/assets/pillar_business_hub.jpg",
