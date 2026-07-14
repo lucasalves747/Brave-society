@@ -47,7 +47,6 @@ const en = {
     quotePost: "\"",
     stats: [
       { num: "40", label: "Founding Members" },
-      { num: "$10K", label: "Entry Investment" },
       { num: "2×", label: "Monthly Gatherings" },
     ],
   },
@@ -218,7 +217,6 @@ const pt: Dict = {
     quotePost: "\"",
     stats: [
       { num: "40", label: "Membros Fundadores" },
-      { num: "$10K", label: "Investimento de Entrada" },
       { num: "2×", label: "Encontros Mensais" },
     ],
   },
@@ -387,7 +385,6 @@ const es: Dict = {
     quotePost: "\"",
     stats: [
       { num: "40", label: "Miembros Fundadores" },
-      { num: "$10K", label: "Inversión de Entrada" },
       { num: "2×", label: "Encuentros Mensuales" },
     ],
   },

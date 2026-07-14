@@ -3,10 +3,11 @@ import { LANGS, useLanguage, type Lang } from "@/lib/i18n";
 
 // Asset URLs from CDN
 const ASSETS = {
+  logo: "/assets/brave_society_logo.png",
   heroVideo: "/assets/ref_miami_skyline.jpg",
   yachtNight: "/assets/ref_yacht_miami_night.jpg",
   dinnerCandle: "/assets/ref_dinner_candle.jpg",
-  winecellar: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a01d2150f3ad81fbd2f215a.jpeg",
+  winecellar: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a562d94180dde3f860515b2.png",
   ironman: "https://assets.cdn.filesafe.space/dkM0aNpySiIFf3uusFTa/media/6a542870180dde3f86913597.jpeg",
   premiumExperiences: "/assets/premium_experiences.png",
   businessHub: "/assets/pillar_business_hub.jpg",
@@ -110,17 +111,11 @@ function Nav() {
       <div className="container flex items-center justify-between py-5">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div
-            className="w-10 h-10 rounded-full border flex items-center justify-center"
-            style={{ borderColor: "#C89B45" }}
-          >
-            <span
-              className="font-display font-bold text-sm"
-              style={{ color: "#C89B45" }}
-            >
-              BS
-            </span>
-          </div>
+          <img
+            src={ASSETS.logo}
+            alt="Brave Society"
+            className="w-10 h-10 object-contain"
+          />
           <span
             className="font-display font-semibold text-base tracking-widest hidden sm:block"
             style={{ color: "#F4E8D0", letterSpacing: "0.15em" }}
@@ -692,43 +687,6 @@ function MembershipSection() {
           </p>
         </div>
 
-        {/* Pricing cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px mb-12" style={{ border: "1px solid rgba(200,155,69,0.2)" }}>
-          <div
-            className="reveal p-10 md:p-12 text-center"
-            style={{ borderRight: "1px solid rgba(200,155,69,0.2)" }}
-          >
-            <p className="eyebrow mb-4">{t.membership.entryLabel}</p>
-            <p
-              className="font-display font-bold mb-2"
-              style={{ color: "#C89B45", fontSize: "clamp(48px, 7vw, 72px)" }}
-            >
-              {t.membership.entryPrice}
-            </p>
-            <p
-              className="font-body text-sm"
-              style={{ color: "rgba(244,232,208,0.5)" }}
-            >
-              {t.membership.entryDesc}
-            </p>
-          </div>
-          <div className="reveal reveal-delay-1 p-10 md:p-12 text-center">
-            <p className="eyebrow mb-4">{t.membership.monthlyLabel}</p>
-            <p
-              className="font-display font-bold mb-2"
-              style={{ color: "#C89B45", fontSize: "clamp(48px, 7vw, 72px)" }}
-            >
-              {t.membership.monthlyPrice}
-            </p>
-            <p
-              className="font-body text-sm"
-              style={{ color: "rgba(244,232,208,0.5)" }}
-            >
-              {t.membership.monthlyDesc}
-            </p>
-          </div>
-        </div>
-
         {/* Conditions */}
         <div
           className="reveal reveal-delay-2 p-8 md:p-10"
@@ -1028,17 +986,11 @@ function Footer() {
       <div className="container text-center">
         {/* Seal */}
         <div className="flex justify-center mb-6">
-          <div
-            className="w-14 h-14 rounded-full border flex items-center justify-center"
-            style={{ borderColor: "rgba(200,155,69,0.4)" }}
-          >
-            <span
-              className="font-display font-bold text-sm"
-              style={{ color: "#C89B45" }}
-            >
-              BS
-            </span>
-          </div>
+          <img
+            src={ASSETS.logo}
+            alt="Brave Society"
+            className="w-14 h-14 object-contain"
+          />
         </div>
 
         <p
