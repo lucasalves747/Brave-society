@@ -6,11 +6,13 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./lib/i18n";
 import Home from "./pages/Home";
+import LaunchDinner from "./pages/LaunchDinner";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/jantar"} component={LaunchDinner} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
