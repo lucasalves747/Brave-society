@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Asset URLs
 const ASSETS = {
@@ -9,6 +9,15 @@ const ASSETS = {
 
 // Checkout destination
 const CHECKOUT_URL = "https://compra.bravesocietyusa.com/carrinho";
+
+// CRM endpoint (same as the main site application form)
+const CRM_URL =
+  "https://contact-blossom-39.lovable.app/api/public/contatos/ck_8dc7a9ed_8dc7a9edb2a6a6dbcb7b7141e8f41ae82ffa0b55333dca75b156023b64d17fab";
+
+// Scroll to the reservation form
+function scrollToForm() {
+  document.getElementById("reservar")?.scrollIntoView({ behavior: "smooth" });
+}
 
 // Event details
 const EVENT = {
@@ -139,9 +148,9 @@ function Hero() {
         </div>
 
         <div className="flex justify-center">
-          <a href={CHECKOUT_URL} className="btn-gold-filled">
+          <button onClick={scrollToForm} className="btn-gold-filled">
             Garantir Presença
-          </a>
+          </button>
         </div>
 
         <p
@@ -276,12 +285,64 @@ function Experience() {
   );
 }
 
-// Final CTA
-function FinalCta() {
+// Reservation form — captures the lead, then sends to checkout
+function ReservationForm() {
+  const [form, setForm] = useState({ name: "", email: "", phone: "" });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const payload = {
+      nome: form.name,
+      email: form.email,
+      telefone: form.phone,
+      regiao: "",
+      profissao: "",
+      redes_sociais: [],
+      comentario: "Jantar de Lançamento — Adega Gaúcha Deerfield · 28/07",
+      tags: ["braves"],
+    };
+
+    try {
+      await fetch(CRM_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error("Erro ao enviar reserva:", err);
+    }
+
+    // Continue to checkout regardless of CRM result
+    window.location.href = CHECKOUT_URL;
+  };
+
+  const inputStyle = {
+    width: "100%",
+    backgroundColor: "rgba(255,255,255,0.04)",
+    border: "1px solid rgba(200,155,69,0.2)",
+    color: "#F4E8D0",
+    padding: "14px 16px",
+    fontFamily: "var(--font-body)",
+    fontSize: "14px",
+    outline: "none",
+    transition: "border-color 0.3s ease",
+  };
+
   return (
-    <section className="py-20 md:py-28" style={{ backgroundColor: "#07111F" }}>
-      <div className="container max-w-2xl mx-auto text-center">
-        <div className="reveal">
+    <section
+      id="reservar"
+      className="py-20 md:py-28"
+      style={{ backgroundColor: "#07111F" }}
+    >
+      <div className="container max-w-xl mx-auto text-center">
+        <div className="reveal mb-10">
           <p className="eyebrow mb-6">Reserve o seu lugar</p>
           <h2
             className="font-display font-bold mb-6"
@@ -296,16 +357,95 @@ function FinalCta() {
             é o convite.
           </h2>
           <p
-            className="font-body leading-relaxed mb-10 max-w-md mx-auto"
+            className="font-body leading-relaxed max-w-md mx-auto"
             style={{ color: "rgba(244,232,208,0.6)" }}
           >
-            Os lugares para o jantar de lançamento são limitados. Garanta o seu
-            e faça parte da noite de fundação.
+            Preencha seus dados para garantir seu lugar no jantar de lançamento.
+            Lugares limitados.
           </p>
-          <a href={CHECKOUT_URL} className="btn-gold-filled">
-            Garantir Presença
-          </a>
         </div>
+
+        <form
+          onSubmit={handleSubmit}
+          className="reveal reveal-delay-1 space-y-4 text-left"
+        >
+          <div>
+            <label className="eyebrow block mb-2" style={{ color: "#C89B45" }}>
+              Nome
+            </label>
+            <input
+              name="name"
+              required
+              value={form.name}
+              onChange={handleChange}
+              style={inputStyle}
+              onFocus={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.6)")
+              }
+              onBlur={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.2)")
+              }
+              placeholder="Seu nome completo"
+            />
+          </div>
+          <div>
+            <label className="eyebrow block mb-2" style={{ color: "#C89B45" }}>
+              Email
+            </label>
+            <input
+              name="email"
+              type="email"
+              required
+              value={form.email}
+              onChange={handleChange}
+              style={inputStyle}
+              onFocus={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.6)")
+              }
+              onBlur={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.2)")
+              }
+              placeholder="seu@email.com"
+            />
+          </div>
+          <div>
+            <label className="eyebrow block mb-2" style={{ color: "#C89B45" }}>
+              Telefone
+            </label>
+            <input
+              name="phone"
+              required
+              value={form.phone}
+              onChange={handleChange}
+              style={inputStyle}
+              onFocus={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.6)")
+              }
+              onBlur={(e) =>
+                (e.target.style.borderColor = "rgba(200,155,69,0.2)")
+              }
+              placeholder="(000) 000-0000"
+            />
+          </div>
+
+          <div className="pt-4">
+            <button
+              type="submit"
+              disabled={loading}
+              className="btn-gold-filled w-full"
+              style={{ opacity: loading ? 0.7 : 1 }}
+            >
+              {loading ? "Enviando..." : "Garantir Presença"}
+            </button>
+          </div>
+
+          <p
+            className="text-center font-body text-xs pt-2"
+            style={{ color: "rgba(244,232,208,0.3)" }}
+          >
+            Ao continuar, você será direcionado para finalizar a reserva.
+          </p>
+        </form>
       </div>
     </section>
   );
@@ -351,7 +491,7 @@ export default function LaunchDinner() {
       <Hero />
       <Details />
       <Experience />
-      <FinalCta />
+      <ReservationForm />
       <Footer />
     </div>
   );
