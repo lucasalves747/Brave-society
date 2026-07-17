@@ -145,7 +145,7 @@ function Header() {
             "background-color 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease",
         }}
       >
-        <div className="container flex items-center justify-between gap-3 py-4">
+        <div className="container flex items-center justify-between gap-2 py-4">
           <a
             href="#top"
             className="flex items-center gap-2 sm:gap-3 min-w-0"
@@ -160,8 +160,8 @@ function Header() {
               className="font-display font-semibold whitespace-nowrap"
               style={{
                 color: "#F4E8D0",
-                fontSize: "clamp(14px, 4.2vw, 18px)",
-                letterSpacing: "clamp(0.12em, 0.7vw, 0.24em)",
+                fontSize: "clamp(13px, 3.6vw, 18px)",
+                letterSpacing: "clamp(0.1em, 0.5vw, 0.24em)",
                 lineHeight: 1,
               }}
             >
@@ -193,7 +193,7 @@ function Header() {
           <button
             onClick={scrollToForm}
             className="btn-gold-filled shrink-0 whitespace-nowrap"
-            style={{ padding: "10px 16px", fontSize: "11px" }}
+            style={{ padding: "9px 14px", fontSize: "11px" }}
           >
             <span className="md:hidden">Reservar</span>
             <span className="hidden md:inline">Garantir Presença</span>
@@ -225,7 +225,7 @@ function Hero() {
   return (
     <section
       id="top"
-      className="relative flex items-center overflow-hidden"
+      className="relative flex items-start md:items-center overflow-hidden"
       style={{ backgroundColor: "#05070B", minHeight: "100svh" }}
     >
       {/* Background image — biased to the right so the copy reads on the left */}
@@ -255,7 +255,10 @@ function Hero() {
         }}
       />
 
-      <div className="container relative z-10 w-full" style={{ paddingTop: "88px" }}>
+      <div
+        className="container relative z-10 w-full"
+        style={{ paddingTop: "clamp(120px, 18vw, 140px)", paddingBottom: "48px" }}
+      >
         <div className="text-left" style={{ maxWidth: "40rem" }}>
           {/* Eyebrow with a leading gold rule */}
           <div
