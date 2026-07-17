@@ -511,9 +511,9 @@ const FIELDS = [
   },
   {
     name: "social",
-    label: "Redes Sociais",
+    label: "Instagram",
     type: "text",
-    placeholder: "@seuinstagram, linkedin.com/in/voce",
+    placeholder: "@seuinstagram",
     required: false,
   },
 ] as const;
