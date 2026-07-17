@@ -345,7 +345,7 @@ function Details() {
   return (
     <section
       id="detalhes"
-      className="py-20 md:py-28"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#07111F", scrollMarginTop: "72px" }}
     >
       <div className="container max-w-3xl mx-auto">
@@ -409,7 +409,7 @@ function Experience() {
   return (
     <section
       id="experiencia"
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="py-12 md:py-16 relative overflow-hidden"
       style={{ backgroundColor: "#05070B", scrollMarginTop: "72px" }}
     >
       <div
@@ -590,7 +590,7 @@ function ReservationForm() {
   return (
     <section
       id="reservar"
-      className="py-24 md:py-32"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#07111F", scrollMarginTop: "72px" }}
     >
       <div className="container max-w-xl mx-auto text-center">
@@ -753,7 +753,7 @@ function ReservationForm() {
 function Footer() {
   return (
     <footer
-      className="py-16"
+      className="py-10"
       style={{
         backgroundColor: "#05070B",
         borderTop: "1px solid rgba(200,155,69,0.12)",
