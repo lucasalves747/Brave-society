@@ -238,15 +238,15 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Logo */}
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mb-6">
           <img
             src={ASSETS.logo}
             alt="Brave Society"
-            className="w-24 h-24 object-contain"
+            className="w-20 h-20 object-contain"
           />
         </div>
 
-        <p className="eyebrow mb-6" style={{ color: "#C89B45" }}>
+        <p className="eyebrow mb-4" style={{ color: "#C89B45" }}>
           {t.hero.eyebrow}
         </p>
 
@@ -266,7 +266,7 @@ function HeroSection() {
         </h1>
 
         <p
-          className="font-body text-base md:text-lg leading-relaxed mb-10 max-w-xl mx-auto"
+          className="font-body text-base md:text-lg leading-relaxed mb-8 max-w-xl mx-auto"
           style={{ color: "rgba(244,232,208,0.75)" }}
         >
           {t.hero.subtitle}
@@ -289,10 +289,6 @@ function HeroSection() {
         </p>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <div className="hairline w-px h-12" style={{ opacity: 0.5 }} />
-      </div>
     </section>
   );
 }
@@ -303,13 +299,13 @@ function ThesisSection() {
   return (
     <section
       id="about"
-      className="py-16 md:py-24"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container max-w-3xl mx-auto text-center">
         <div className="reveal">
           <p className="eyebrow mb-8">{t.thesis.eyebrow}</p>
-          <div className="hairline w-16 mx-auto mb-12" />
+          <div className="hairline w-16 mx-auto mb-8" />
         </div>
 
         <blockquote
@@ -339,15 +335,17 @@ function PillarsSection() {
     ASSETS.ironman,
     ASSETS.infrastructure,
   ];
+  // crop focus per image; the ironman shot needs the atleta framed, not the crowd's backs
+  const pillarFocus = ["", "", "", "center 25%", ""];
 
   return (
     <section
       id="pillars"
-      className="py-16 md:py-24"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#07111F" }}
     >
       <div className="container">
-        <div className="pillars-head flex flex-col md:flex-row md:items-end md:justify-between mb-20 md:mb-28 gap-6">
+        <div className="pillars-head flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16 gap-6">
           <div>
             <p className="eyebrow mb-4">{t.pillars.eyebrow}</p>
             <h2
@@ -374,7 +372,12 @@ function PillarsSection() {
               className={`pillar-row${i % 2 === 1 ? " reverse" : ""}`}
             >
               <div className="pillar-media">
-                <img src={pillarImages[i]} alt={pillar.title} loading="lazy" />
+                <img
+                  src={pillarImages[i]}
+                  alt={pillar.title}
+                  loading="lazy"
+                  style={pillarFocus[i] ? { objectPosition: pillarFocus[i] } : undefined}
+                />
                 <span className="pillar-frame" aria-hidden="true" />
               </div>
               <div className="pillar-copy">
@@ -395,7 +398,7 @@ function ProgrammingSection() {
   const { t } = useLanguage();
   return (
     <section
-      className="py-16 md:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 relative overflow-hidden"
       style={{ backgroundColor: "#05070B" }}
     >
       {/* Background image with heavy overlay */}
@@ -406,7 +409,7 @@ function ProgrammingSection() {
       <div className="absolute inset-0" style={{ background: "rgba(5,7,11,0.8)" }} />
 
       <div className="container relative z-10">
-        <div className="reveal text-center mb-16">
+        <div className="reveal text-center mb-10">
           <p className="eyebrow mb-4">{t.programming.eyebrow}</p>
           <h2
             className="font-display font-bold"
@@ -457,7 +460,7 @@ function CodeSection() {
   const { t } = useLanguage();
   return (
     <section
-      className="py-16 md:py-24 relative overflow-hidden"
+      className="py-12 md:py-16 relative overflow-hidden"
       style={{ backgroundColor: "#07111F" }}
     >
       {/* Watermark seal */}
@@ -498,7 +501,7 @@ function CodeSection() {
             <br />
             {t.code.titleLine2}
           </h2>
-          <div className="hairline w-16 mx-auto mb-12" />
+          <div className="hairline w-16 mx-auto mb-4" />
         </div>
 
         <div className="space-y-6">
@@ -533,11 +536,11 @@ function FoundersSection() {
   return (
     <section
       id="founders"
-      className="py-16 md:py-24"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container">
-        <div className="reveal text-center mb-16">
+        <div className="reveal text-center mb-10">
           <p className="eyebrow mb-4">{t.founders.eyebrow}</p>
           <h2
             className="font-display font-bold"
@@ -636,11 +639,11 @@ function MembershipSection() {
   return (
     <section
       id="membership"
-      className="py-16 md:py-24"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#07111F" }}
     >
       <div className="container max-w-4xl mx-auto">
-        <div className="reveal text-center mb-16">
+        <div className="reveal text-center mb-10">
           <p className="eyebrow mb-4">{t.membership.eyebrow}</p>
           <h2
             className="font-display font-bold mb-4"
@@ -772,11 +775,11 @@ function ApplySection() {
   return (
     <section
       id="apply"
-      className="py-16 md:py-24"
+      className="py-12 md:py-16"
       style={{ backgroundColor: "#05070B" }}
     >
       <div className="container max-w-2xl mx-auto">
-        <div className="reveal text-center mb-14">
+        <div className="reveal text-center mb-10">
           <p className="eyebrow mb-4">{t.apply.eyebrow}</p>
           <h2
             className="font-display font-bold mb-4"
@@ -973,7 +976,7 @@ function Footer() {
   const { t } = useLanguage();
   return (
     <footer
-      className="py-16"
+      className="py-10"
       style={{
         backgroundColor: "#05070B",
         borderTop: "1px solid rgba(200,155,69,0.12)",

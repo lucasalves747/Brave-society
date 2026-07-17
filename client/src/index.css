@@ -222,12 +222,12 @@
 .pillars-list {
   display: flex;
   flex-direction: column;
-  gap: clamp(4.5rem, 9vw, 9rem);
+  gap: clamp(3rem, 5vw, 5rem);
 }
 
 .pillar-row {
   display: grid;
-  gap: clamp(1.75rem, 4vw, 4.5rem);
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: center;
 }
 

@@ -119,7 +119,7 @@ function Hero() {
           style={{ color: "rgba(244,232,208,0.78)" }}
         >
           A noite em que a sociedade nasce. Um jantar exclusivo para marcar a
-          fundação do círculo — brinde, presença e legado.
+          fundação do círculo, brinde, presença e legado.
         </p>
 
         {/* Date badge */}
@@ -268,7 +268,7 @@ function Experience() {
           }}
         >
           Uma noite de alta gastronomia na{" "}
-          <em style={{ color: "#C89B45" }}>Adega Gaúcha</em> — onde os fundadores
+          <em style={{ color: "#C89B45" }}>Adega Gaúcha</em>, onde os fundadores
           se sentam à mesma mesa e o legado começa a ser escrito.
         </blockquote>
 

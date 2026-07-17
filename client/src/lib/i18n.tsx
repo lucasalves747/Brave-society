@@ -61,7 +61,7 @@ const en = {
       },
       {
         title: "Business Hub",
-        desc: "Closed rounds, Club Deals, and Real Estate co-investment. Business protected from aggressive selling — only aligned partners at the table.",
+        desc: "Closed rounds, Club Deals, and Real Estate co-investment. Business protected from aggressive selling, only aligned partners at the table.",
       },
       {
         title: "Premium Experiences",
@@ -90,7 +90,7 @@ const en = {
       {
         freq: "Twice a month",
         title: "Member Gatherings",
-        desc: "Rotating formats — pocket dinners, yacht outings, wine appreciation evenings, and city experiences that build genuine bonds.",
+        desc: "Rotating formats: pocket dinners, yacht outings, wine appreciation evenings, and city experiences that build genuine bonds.",
       },
       {
         freq: "Quarterly",
@@ -131,7 +131,7 @@ const en = {
       {
         title: "Co-Founder",
         role: "Attorney, Accountant & High-Performance Coach",
-        bio: "Tax attorney, accountant, and business mentor. Ultraman and Ironman athlete. Author of the REI Method and best-selling books. Teaches that prosperity is the fullness of life — becoming successful in every area with purpose and high performance.",
+        bio: "Tax attorney, accountant, and business mentor. Ultraman and Ironman athlete. Author of the REI Method and best-selling books. Teaches that prosperity is the fullness of life, becoming successful in every area with purpose and high performance.",
       },
     ],
   },
@@ -231,7 +231,7 @@ const pt: Dict = {
       },
       {
         title: "Hub de Negócios",
-        desc: "Rodadas fechadas, Club Deals e coinvestimento imobiliário. Negócios protegidos da venda agressiva — apenas parceiros alinhados à mesa.",
+        desc: "Rodadas fechadas, Club Deals e coinvestimento imobiliário. Negócios protegidos da venda agressiva, apenas parceiros alinhados à mesa.",
       },
       {
         title: "Experiências Premium",
@@ -260,7 +260,7 @@ const pt: Dict = {
       {
         freq: "Duas vezes por mês",
         title: "Encontros de Membros",
-        desc: "Formatos rotativos — jantares reservados, passeios de iate, noites de apreciação de vinhos e experiências pela cidade que constroem laços genuínos.",
+        desc: "Formatos rotativos: jantares reservados, passeios de iate, noites de apreciação de vinhos e experiências pela cidade que constroem laços genuínos.",
       },
       {
         freq: "Trimestral",
@@ -301,7 +301,7 @@ const pt: Dict = {
       {
         title: "Cofundador",
         role: "Advogado, Contador & Coach de Alta Performance",
-        bio: "Advogado tributarista, contador e mentor de negócios. Atleta Ultraman e Ironman. Autor do Método REI e de livros best-sellers. Ensina que a prosperidade é a plenitude da vida — tornar-se bem-sucedido em todas as áreas com propósito e alta performance.",
+        bio: "Advogado tributarista, contador e mentor de negócios. Atleta Ultraman e Ironman. Autor do Método REI e de livros best-sellers. Ensina que a prosperidade é a plenitude da vida, tornar-se bem-sucedido em todas as áreas com propósito e alta performance.",
       },
     ],
   },
@@ -399,7 +399,7 @@ const es: Dict = {
       },
       {
         title: "Hub de Negocios",
-        desc: "Rondas cerradas, Club Deals y coinversión inmobiliaria. Negocios protegidos de la venta agresiva — solo socios alineados en la mesa.",
+        desc: "Rondas cerradas, Club Deals y coinversión inmobiliaria. Negocios protegidos de la venta agresiva, solo socios alineados en la mesa.",
       },
       {
         title: "Experiencias Premium",
@@ -428,7 +428,7 @@ const es: Dict = {
       {
         freq: "Dos veces al mes",
         title: "Encuentros de Miembros",
-        desc: "Formatos rotativos — cenas reservadas, salidas en yate, veladas de apreciación de vinos y experiencias por la ciudad que construyen vínculos genuinos.",
+        desc: "Formatos rotativos: cenas reservadas, salidas en yate, veladas de apreciación de vinos y experiencias por la ciudad que construyen vínculos genuinos.",
       },
       {
         freq: "Trimestral",
@@ -469,7 +469,7 @@ const es: Dict = {
       {
         title: "Cofundador",
         role: "Abogado, Contador & Coach de Alto Rendimiento",
-        bio: "Abogado tributario, contador y mentor de negocios. Atleta Ultraman e Ironman. Autor del Método REI y de libros best-sellers. Enseña que la prosperidad es la plenitud de la vida — tener éxito en cada área con propósito y alto rendimiento.",
+        bio: "Abogado tributario, contador y mentor de negocios. Atleta Ultraman e Ironman. Autor del Método REI y de libros best-sellers. Enseña que la prosperidad es la plenitud de la vida, tener éxito en cada área con propósito y alto rendimiento.",
       },
     ],
   },
