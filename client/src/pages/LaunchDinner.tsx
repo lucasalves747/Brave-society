@@ -78,20 +78,20 @@ function Header() {
         className="overflow-hidden"
         style={{
           backgroundColor: "#C89B45",
-          maxHeight: scrolled ? "0px" : "44px",
+          maxHeight: scrolled ? "0px" : "60px",
           transition: "max-height 0.5s cubic-bezier(0.22,1,0.36,1)",
         }}
       >
         <div
-          className="container flex items-center justify-center gap-3 py-3 text-center"
+          className="container flex flex-wrap items-center justify-center gap-x-2 gap-y-1 sm:gap-x-3 py-3 text-center"
           style={{ color: "#05070B" }}
         >
           <span
-            className="font-body"
+            className="font-body whitespace-nowrap"
             style={{
               fontSize: "11px",
               fontWeight: 700,
-              letterSpacing: "0.16em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
             }}
           >
@@ -101,15 +101,15 @@ function Header() {
             ✦
           </span>
           <span
-            className="font-body"
+            className="font-body whitespace-nowrap"
             style={{
               fontSize: "11px",
               fontWeight: 600,
-              letterSpacing: "0.16em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
             }}
           >
-            Adega Gaúcha · Deerfield
+            7:30 PM
           </span>
           <span
             className="hidden sm:inline"
@@ -119,15 +119,15 @@ function Header() {
             ✦
           </span>
           <span
-            className="hidden sm:inline font-body"
+            className="hidden sm:inline font-body whitespace-nowrap"
             style={{
               fontSize: "11px",
               fontWeight: 600,
-              letterSpacing: "0.16em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
             }}
           >
-            7:30 PM
+            Adega Gaúcha · Deerfield
           </span>
         </div>
       </div>
@@ -145,24 +145,23 @@ function Header() {
             "background-color 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease",
         }}
       >
-        <div className="container flex items-center justify-between py-4">
+        <div className="container flex items-center justify-between gap-3 py-4">
           <a
             href="#top"
-            className="flex items-center gap-3"
+            className="flex items-center gap-2 sm:gap-3 min-w-0"
             style={{ textDecoration: "none" }}
           >
             <img
               src={ASSETS.logo}
               alt="Brave Society"
-              className="object-contain"
-              style={{ width: "36px", height: "36px" }}
+              className="object-contain shrink-0 w-8 h-8 sm:w-9 sm:h-9"
             />
             <span
-              className="font-display font-semibold"
+              className="font-display font-semibold whitespace-nowrap"
               style={{
                 color: "#F4E8D0",
-                fontSize: "18px",
-                letterSpacing: "0.24em",
+                fontSize: "clamp(14px, 4.2vw, 18px)",
+                letterSpacing: "clamp(0.12em, 0.7vw, 0.24em)",
                 lineHeight: 1,
               }}
             >
@@ -193,10 +192,11 @@ function Header() {
 
           <button
             onClick={scrollToForm}
-            className="btn-gold-filled"
-            style={{ padding: "11px 26px", fontSize: "11px" }}
+            className="btn-gold-filled shrink-0 whitespace-nowrap"
+            style={{ padding: "10px 16px", fontSize: "11px" }}
           >
-            Garantir Presença
+            <span className="md:hidden">Reservar</span>
+            <span className="hidden md:inline">Garantir Presença</span>
           </button>
         </div>
       </div>
@@ -625,7 +625,7 @@ function ReservationForm() {
               backgroundColor: "rgba(5,7,11,0.4)",
             }}
           >
-            <div className="flex flex-col justify-center text-left px-7 py-5">
+            <div className="flex flex-col justify-center text-left px-5 sm:px-7 py-5">
               <span
                 className="eyebrow"
                 style={{ color: "#C89B45", marginBottom: "4px" }}
@@ -643,7 +643,7 @@ function ReservationForm() {
               className="hairline self-stretch"
               style={{ width: "1px", height: "auto", opacity: 0.35 }}
             />
-            <div className="flex items-start px-8 py-4">
+            <div className="flex items-start px-6 sm:px-8 py-4">
               <span
                 className="font-display"
                 style={{
