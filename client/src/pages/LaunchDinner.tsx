@@ -28,7 +28,7 @@ function scrollToForm() {
 const EVENT = {
   title: "Jantar de Lançamento",
   date: "Terça-feira, 28 de Julho",
-  time: "7:30 PM",
+  time: "7:00 PM",
   venue: "Adega Gaúcha Deerfield",
   address: "240 S Federal Hwy, Deerfield Beach",
   mapUrl:
@@ -109,7 +109,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            7:30 PM
+            7:00 PM
           </span>
           <span
             className="hidden sm:inline"
@@ -260,23 +260,6 @@ function Hero() {
         style={{ paddingTop: "clamp(120px, 18vw, 140px)", paddingBottom: "48px" }}
       >
         <div className="text-left" style={{ maxWidth: "40rem" }}>
-          {/* Eyebrow with a leading gold rule */}
-          <div
-            className="ld-rise flex items-center gap-4 mb-7"
-            style={{ ["--ld-delay" as string]: "0.1s" }}
-          >
-            <span
-              className="hairline"
-              style={{ width: "2.5rem", opacity: 0.85 }}
-            />
-            <span
-              className="eyebrow"
-              style={{ color: "#C89B45", letterSpacing: "0.32em" }}
-            >
-              Confiança · Relacionamento · Legado
-            </span>
-          </div>
-
           <h1
             className="ld-rise font-display font-semibold mb-8"
             style={{
@@ -459,9 +442,9 @@ function Experience() {
             maxWidth: "44ch",
           }}
         >
-          Jantar assinado, seleção de vinhos e o encontro que marca o início da
-          Brave Society. Um ambiente reservado para quem entende que confiança
-          precede oportunidade.
+          Jantar assinado e o encontro que marca o início da Brave Society. Um
+          ambiente reservado para quem entende que confiança precede
+          oportunidade.
         </p>
       </div>
     </section>
@@ -680,7 +663,7 @@ function ReservationForm() {
               letterSpacing: "0.02em",
             }}
           >
-            Jantar assinado e seleção de vinhos inclusos.
+            Jantar assinado incluso.
           </p>
         </div>
 
