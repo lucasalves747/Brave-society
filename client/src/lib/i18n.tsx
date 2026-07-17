@@ -69,7 +69,7 @@ const en = {
       },
       {
         title: "Integral Growth",
-        desc: "Health, family, presence, and leadership. Ironman training, high-performance coaching, and accountability circles for the next level of life.",
+        desc: "Health, family, presence, and leadership. Physical performance, human development, and a community committed to a life of excellence.",
       },
       {
         title: "Private Infrastructure",
@@ -99,8 +99,8 @@ const en = {
       },
       {
         freq: "Ongoing",
-        title: "High-Performance Training",
-        desc: "Ironman preparation groups, elite fitness challenges, and wellness experiences that forge brotherhood through shared adversity.",
+        title: "Physical Performance",
+        desc: "An environment that inspires discipline, strengthens the body, and turns health into a way of life.",
       },
     ],
   },
@@ -130,8 +130,8 @@ const en = {
       },
       {
         title: "Co-Founder",
-        role: "Attorney, Accountant & High-Performance Coach",
-        bio: "Tax attorney, accountant, and business mentor. Ultraman and Ironman athlete. Author of the REI Method and best-selling books. Teaches that prosperity is the fullness of life, becoming successful in every area with purpose and high performance.",
+        role: "Tax Attorney, Accountant, and Mentor",
+        bio: "Author of 1000 Codes of Wisdom, creator of the REI Method, and Ultraman and Ironman athlete.\n\nHe dedicates his life to shaping leaders who thrive with purpose, strengthening businesses, families, relationships, and legacy. Because true success is not measured by a single achievement, but by the harmony among all areas of life.",
       },
     ],
   },
@@ -147,12 +147,12 @@ const en = {
     monthlyPrice: "$1,000",
     monthlyDesc: "Billing begins only from the 4th month.",
     conditions: [
-      { val: "40", label: "Founding Members\nThis Phase Only" },
-      { val: "12", label: "Months Minimum\nRecommended Commitment" },
-      { val: "100%", label: "Committee Approval\nRequired for Entry" },
+      { val: "40", label: "Founding Members" },
+      { val: "12", label: "Months\nMinimum Membership Period" },
+      { val: "Admission", label: "Upon Approval" },
     ],
     disclaimer:
-      "Payment does not guarantee automatic access. All applications are subject to committee review.",
+      "Each application is reviewed to preserve the community's quality, values, and trust.",
     cta: "Request Your Invitation",
   },
   apply: {
@@ -239,7 +239,7 @@ const pt: Dict = {
       },
       {
         title: "Crescimento Integral",
-        desc: "Saúde, família, presença e liderança. Treinos de Ironman, coaching de alta performance e círculos de responsabilidade para o próximo nível da vida.",
+        desc: "Saúde, família, presença e liderança. Performance física, desenvolvimento humano e uma comunidade comprometida com uma vida de excelência.",
       },
       {
         title: "Infraestrutura Privada",
@@ -269,8 +269,8 @@ const pt: Dict = {
       },
       {
         freq: "Contínuo",
-        title: "Treinamento de Alta Performance",
-        desc: "Grupos de preparação para o Ironman, desafios fitness de elite e experiências de bem-estar que forjam a irmandade através da adversidade compartilhada.",
+        title: "Performance Física",
+        desc: "Um ambiente que inspira disciplina, fortalece o corpo e transforma saúde em um estilo de vida.",
       },
     ],
   },
@@ -300,8 +300,8 @@ const pt: Dict = {
       },
       {
         title: "Cofundador",
-        role: "Advogado, Contador & Coach de Alta Performance",
-        bio: "Advogado tributarista, contador e mentor de negócios. Atleta Ultraman e Ironman. Autor do Método REI e de livros best-sellers. Ensina que a prosperidade é a plenitude da vida, tornar-se bem-sucedido em todas as áreas com propósito e alta performance.",
+        role: "Advogado Tributário, Contador e Mentor",
+        bio: "Autor de 1000 Códigos de Sabedoria, criador do Método REI e atleta Ultraman e Ironman.\n\nDedica sua vida a formar líderes que prosperam com propósito, fortalecendo negócios, famílias, relacionamentos e legado. Porque o verdadeiro sucesso não se mede por uma única conquista, mas pela harmonia entre todas as áreas da vida.",
       },
     ],
   },
@@ -317,12 +317,12 @@ const pt: Dict = {
     monthlyPrice: "$1.000",
     monthlyDesc: "A cobrança começa apenas a partir do 4º mês.",
     conditions: [
-      { val: "40", label: "Membros Fundadores\nApenas Nesta Fase" },
-      { val: "12", label: "Meses Mínimos\nCompromisso Recomendado" },
-      { val: "100%", label: "Aprovação do Comitê\nExigida para Entrada" },
+      { val: "40", label: "Membros Fundadores" },
+      { val: "12", label: "Meses\nPeríodo Mínimo de Associação" },
+      { val: "Admissão", label: "Mediante Aprovação" },
     ],
     disclaimer:
-      "O pagamento não garante acesso automático. Todas as candidaturas estão sujeitas à avaliação do comitê.",
+      "Cada candidatura é analisada para preservar a qualidade, os valores e a confiança da comunidade.",
     cta: "Solicite Seu Convite",
   },
   apply: {
@@ -407,7 +407,7 @@ const es: Dict = {
       },
       {
         title: "Crecimiento Integral",
-        desc: "Salud, familia, presencia y liderazgo. Entrenamiento Ironman, coaching de alto rendimiento y círculos de responsabilidad para el siguiente nivel de vida.",
+        desc: "Salud, familia, presencia y liderazgo. Rendimiento físico, desarrollo humano y una comunidad comprometida con una vida de excelencia.",
       },
       {
         title: "Infraestructura Privada",
@@ -437,8 +437,8 @@ const es: Dict = {
       },
       {
         freq: "Continuo",
-        title: "Entrenamiento de Alto Rendimiento",
-        desc: "Grupos de preparación para el Ironman, desafíos fitness de élite y experiencias de bienestar que forjan la hermandad a través de la adversidad compartida.",
+        title: "Rendimiento Físico",
+        desc: "Un ambiente que inspira disciplina, fortalece el cuerpo y transforma la salud en un estilo de vida.",
       },
     ],
   },
@@ -468,8 +468,8 @@ const es: Dict = {
       },
       {
         title: "Cofundador",
-        role: "Abogado, Contador & Coach de Alto Rendimiento",
-        bio: "Abogado tributario, contador y mentor de negocios. Atleta Ultraman e Ironman. Autor del Método REI y de libros best-sellers. Enseña que la prosperidad es la plenitud de la vida, tener éxito en cada área con propósito y alto rendimiento.",
+        role: "Abogado Tributario, Contador y Mentor",
+        bio: "Autor de 1000 Códigos de Sabiduría, creador del Método REI y atleta Ultraman e Ironman.\n\nDedica su vida a formar líderes que prosperan con propósito, fortaleciendo negocios, familias, relaciones y legado. Porque el verdadero éxito no se mide por un solo logro, sino por la armonía entre todas las áreas de la vida.",
       },
     ],
   },
@@ -485,12 +485,12 @@ const es: Dict = {
     monthlyPrice: "$1,000",
     monthlyDesc: "El cobro comienza solo a partir del 4.º mes.",
     conditions: [
-      { val: "40", label: "Miembros Fundadores\nSolo en Esta Fase" },
-      { val: "12", label: "Meses Mínimos\nCompromiso Recomendado" },
-      { val: "100%", label: "Aprobación del Comité\nRequerida para Ingresar" },
+      { val: "40", label: "Miembros Fundadores" },
+      { val: "12", label: "Meses\nPeríodo Mínimo de Membresía" },
+      { val: "Admisión", label: "Sujeta a Aprobación" },
     ],
     disclaimer:
-      "El pago no garantiza acceso automático. Todas las postulaciones están sujetas a la revisión del comité.",
+      "Cada postulación es analizada para preservar la calidad, los valores y la confianza de la comunidad.",
     cta: "Solicita Tu Invitación",
   },
   apply: {

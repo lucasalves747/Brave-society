@@ -619,7 +619,7 @@ function FoundersSection() {
                 </p>
                 <div className="hairline mb-4" style={{ opacity: 0.2 }} />
                 <p
-                  className="font-body leading-relaxed text-sm"
+                  className="font-body leading-relaxed text-sm whitespace-pre-line"
                   style={{ color: "rgba(244,232,208,0.6)" }}
                 >
                   {founder.bio}
