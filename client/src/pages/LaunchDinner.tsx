@@ -507,6 +507,7 @@ const FIELDS = [
       "Marketing digital",
       "Eventos e entretenimento",
       "E-commerce",
+      "Outros",
     ],
   },
   {
@@ -526,6 +527,7 @@ function ReservationForm() {
     phone: "",
     region: "",
     profession: "",
+    professionOther: "",
     social: "",
   });
   const [loading, setLoading] = useState(false);
@@ -545,7 +547,8 @@ function ReservationForm() {
       email: form.email,
       telefone: form.phone,
       regiao: form.region,
-      profissao: form.profession,
+      profissao:
+        form.profession === "Outros" ? form.professionOther : form.profession,
       redes_sociais: form.social
         .split(",")
         .map((s) => s.trim())
@@ -707,6 +710,18 @@ function ReservationForm() {
                   onChange={handleChange}
                   className="ld-field"
                   placeholder={field.placeholder}
+                />
+              )}
+              {field.name === "profession" && form.profession === "Outros" && (
+                <input
+                  name="professionOther"
+                  type="text"
+                  required
+                  value={form.professionOther}
+                  onChange={handleChange}
+                  className="ld-field"
+                  placeholder="Digite sua profissão"
+                  style={{ marginTop: "12px" }}
                 />
               )}
             </div>
