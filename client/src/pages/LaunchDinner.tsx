@@ -27,12 +27,12 @@ function scrollToForm() {
 // Event details
 const EVENT = {
   title: "Jantar de Lançamento",
-  date: "Terça-feira, 28 de Julho",
-  time: "7:00 PM",
-  venue: "Adega Gaúcha Deerfield",
-  address: "240 S Federal Hwy, Deerfield Beach",
+  date: "Quarta-feira, 26 de Agosto",
+  time: "7:30 PM",
+  venue: "Restaurant Vinhus",
+  address: "2201 E Atlantic Blvd, Pompano Beach, FL 33062",
   mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=Adega+Gaucha+240+S+Federal+Hwy+Deerfield+Beach",
+    "https://www.google.com/maps/search/?api=1&query=Restaurant+Vinhus+2201+E+Atlantic+Blvd+Pompano+Beach+FL+33062",
 };
 
 // Scroll reveal hook (matches Home)
@@ -95,7 +95,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            28 de Julho de 2026
+            26 de Agosto de 2026
           </span>
           <span aria-hidden="true" style={{ opacity: 0.55 }}>
             ✦
@@ -109,7 +109,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            7:00 PM
+            7:30 PM
           </span>
           <span
             className="hidden sm:inline"
@@ -127,7 +127,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            Adega Gaúcha · Deerfield
+            Restaurant Vinhus · Pompano Beach
           </span>
         </div>
       </div>
@@ -425,8 +425,8 @@ function Experience() {
           }}
         >
           Uma noite de alta gastronomia na{" "}
-          <em style={{ color: "#C89B45" }}>Adega Gaúcha</em>, onde os fundadores
-          se sentam à mesma mesa e o legado começa a ser escrito.
+          <em style={{ color: "#C89B45" }}>Restaurant Vinhus</em>, onde os
+          fundadores se sentam à mesma mesa e o legado começa a ser escrito.
         </blockquote>
 
         <div
@@ -553,7 +553,7 @@ function ReservationForm() {
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean),
-      comentario: "Jantar de Lançamento — Adega Gaúcha Deerfield · 28/07",
+      comentario: "Jantar de Lançamento — Restaurant Vinhus Pompano Beach · 26/08",
       tags: ["braves"],
     };
 
