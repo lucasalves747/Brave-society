@@ -653,7 +653,7 @@ function ReservationForm() {
                   lineHeight: 1,
                 }}
               >
-                60
+                50
               </span>
             </div>
           </div>
