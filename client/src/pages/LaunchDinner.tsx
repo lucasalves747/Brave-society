@@ -26,7 +26,7 @@ function scrollToForm() {
 
 // Event details
 const EVENT = {
-  title: "Jantar de Lançamento",
+  title: "Jantar",
   date: "Quarta-feira, 26 de Agosto",
   time: "7:30 PM",
   venue: "Restaurant Vinhus",
@@ -553,7 +553,7 @@ function ReservationForm() {
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean),
-      comentario: "Jantar de Lançamento — Restaurant Vinhus Pompano Beach · 26/08",
+      comentario: "Jantar — Restaurant Vinhus Pompano Beach · 26/08",
       tags: ["braves"],
     };
 
@@ -603,8 +603,8 @@ function ReservationForm() {
             className="font-body leading-relaxed mx-auto mb-9"
             style={{ color: "rgba(244,232,208,0.62)", maxWidth: "30rem" }}
           >
-            Preencha seus dados para garantir seu lugar no jantar de lançamento.
-            Lugares limitados.
+            Preencha seus dados para garantir seu lugar no jantar. Lugares
+            limitados.
           </p>
 
           <div
@@ -619,7 +619,7 @@ function ReservationForm() {
                 className="eyebrow"
                 style={{ color: "#C89B45", marginBottom: "4px" }}
               >
-                Contribuição
+                Custo do jantar
               </span>
               <span
                 className="font-body"
