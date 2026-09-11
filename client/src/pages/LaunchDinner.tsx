@@ -26,13 +26,12 @@ function scrollToForm() {
 
 // Event details
 const EVENT = {
-  title: "Jantar",
-  date: "Quarta-feira, 26 de Agosto",
-  time: "7:30 PM",
-  venue: "Restaurant Vinhus",
-  address: "2201 E Atlantic Blvd, Pompano Beach, FL 33062",
-  mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=Restaurant+Vinhus+2201+E+Atlantic+Blvd+Pompano+Beach+FL+33062",
+  title: "Almoço + Evento BRAVE",
+  date: "Sábado, 3 de Outubro",
+  time: "Dia todo",
+  format: "Evento aberto",
+  venue: "Miami, FL",
+  address: "Local a confirmar",
 };
 
 // Scroll reveal hook (matches Home)
@@ -95,7 +94,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            26 de Agosto de 2026
+            3 de Outubro de 2026
           </span>
           <span aria-hidden="true" style={{ opacity: 0.55 }}>
             ✦
@@ -109,7 +108,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            7:30 PM
+            Dia todo
           </span>
           <span
             className="hidden sm:inline"
@@ -127,7 +126,7 @@ function Header() {
               textTransform: "uppercase",
             }}
           >
-            Restaurant Vinhus · Pompano Beach
+            Miami, FL · Evento aberto
           </span>
         </div>
       </div>
@@ -286,7 +285,7 @@ function Hero() {
               className="font-body leading-relaxed mb-4"
               style={{ color: "rgba(244,232,208,0.78)", fontSize: "16px" }}
             >
-              Nesta noite, os primeiros membros fundadores serão convidados a
+              Neste encontro, os primeiros membros fundadores serão convidados a
               fazer parte de uma comunidade formada por empresários que acreditam
               que grandes resultados são construídos sobre confiança,
               relacionamentos sólidos e propósito.
@@ -295,7 +294,7 @@ function Hero() {
               className="font-body leading-relaxed"
               style={{ color: "rgba(244,232,208,0.78)", fontSize: "16px" }}
             >
-              Mais do que um jantar, este será o primeiro capítulo de uma
+              Mais do que um almoço e uma palestra, este será o primeiro capítulo de uma
               sociedade criada para conectar líderes, gerar oportunidades e
               construir um legado que transcende os negócios.
             </p>
@@ -324,6 +323,7 @@ function Details() {
   const items = [
     { label: "Data", value: EVENT.date },
     { label: "Horário", value: EVENT.time },
+    { label: "Formato", value: EVENT.format },
     { label: "Local", value: EVENT.venue },
     { label: "Endereço", value: EVENT.address },
   ];
@@ -348,7 +348,7 @@ function Details() {
               textWrap: "balance",
             }}
           >
-            Detalhes da Noite
+            Detalhes do Encontro
           </h2>
         </div>
 
@@ -376,14 +376,16 @@ function Details() {
         </div>
 
         <div className="reveal reveal-delay-2 text-center mt-12">
-          <a
-            href={EVENT.mapUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-gold"
+          <p
+            className="font-body mx-auto"
+            style={{
+              color: "rgba(244,232,208,0.5)",
+              fontSize: "13px",
+              maxWidth: "34ch",
+            }}
           >
-            Ver no Mapa
-          </a>
+            O endereço exato em Miami será enviado por e-mail aos confirmados.
+          </p>
         </div>
       </div>
     </section>
@@ -424,9 +426,9 @@ function Experience() {
             textWrap: "balance",
           }}
         >
-          Uma noite de alta gastronomia na{" "}
-          <em style={{ color: "#C89B45" }}>Restaurant Vinhus</em>, onde os
-          fundadores se sentam à mesma mesa e o legado começa a ser escrito.
+          Um dia de conteúdo e alta gastronomia em{" "}
+          <em style={{ color: "#C89B45" }}>Miami</em>, onde os fundadores se
+          sentam à mesma mesa e o legado começa a ser escrito.
         </blockquote>
 
         <div
@@ -442,7 +444,7 @@ function Experience() {
             maxWidth: "44ch",
           }}
         >
-          Jantar assinado e o encontro que marca o início da Brave Society. Um
+          Almoço, palestra e o encontro que marca o início da Brave Society. Um
           ambiente reservado para quem entende que confiança precede
           oportunidade.
         </p>
@@ -553,7 +555,7 @@ function ReservationForm() {
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean),
-      comentario: "Jantar — Restaurant Vinhus Pompano Beach · 26/08",
+      comentario: "Almoço + Evento BRAVE — Miami · 03/10",
       tags: ["braves"],
     };
 
@@ -603,7 +605,7 @@ function ReservationForm() {
             className="font-body leading-relaxed mx-auto mb-9"
             style={{ color: "rgba(244,232,208,0.62)", maxWidth: "30rem" }}
           >
-            Preencha seus dados para garantir seu lugar no jantar. Lugares
+            Preencha seus dados para garantir seu lugar no evento. Lugares
             limitados.
           </p>
 
@@ -619,7 +621,7 @@ function ReservationForm() {
                 className="eyebrow"
                 style={{ color: "#C89B45", marginBottom: "4px" }}
               >
-                Custo do jantar
+                Custo do evento
               </span>
               <span
                 className="font-body"
@@ -666,7 +668,7 @@ function ReservationForm() {
               letterSpacing: "0.02em",
             }}
           >
-            Jantar assinado incluso.
+            Almoço incluso.
           </p>
         </div>
 

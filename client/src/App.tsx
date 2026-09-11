@@ -13,6 +13,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/jantar"} component={LaunchDinner} />
+      <Route path={"/evento"} component={LaunchDinner} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
